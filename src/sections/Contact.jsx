@@ -1,8 +1,9 @@
-import { useRef, useState } from "react";
+import { useRef, useState, lazy } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
-import ContactExperience from "../components/Models/contact/ContactExperience.jsx";
+const ContactExperience = lazy(() => import("../components/Models/contact/ContactExperience"));
+
 
 const Contact = () => {
     const formRef = useRef(null);
