@@ -6,9 +6,9 @@ const Footer = () => {
         <footer className='footer'>
             <div className='footer-container'>
                 <div className='flex flex-col justify-center md:items-start items-center'>
-                    <a href='/cv/AbirLalBanerjee_CV.pdf' download>Get My CV</a>
+                    <a href='/cv/Abir Lal Banerjee_CV.pdf' download>Get My CV</a>
                 </div>
-                <div className='socials'>
+                <div className='socials'> 
                     {socialImgs.map((img) => (
                         <a className='icon' target='_blank' href={img.url} key={img.url}>
                             <img
