@@ -2,6 +2,7 @@ import React, {useRef} from 'react'
 import { gsap } from 'gsap'
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import { useGSAP} from "@gsap/react";
+import { Link } from 'react-router-dom'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -80,6 +81,25 @@ const ShowCaseSection = () => {
                             <h2>AceWise an AI powered Interview Platform</h2>
                         </div>
                     </div>
+                </div>
+                
+                {/* See More Button */}
+                <div className="flex justify-center mt-16">
+                    <Link
+                        to="/projects"
+                        className="cta-wrapper group md:w-80 md:h-16 w-60 h-12"
+                    >
+                        <div className='cta-button group'>
+                            <div className='bg-circle' />
+                            <p className='text'>See More of My Work</p>
+                            <div className='arrow-wrapper'>
+                                <img
+                                    src='/images/arrow-right.svg'
+                                    alt='arrow'
+                                />
+                            </div>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </section>
